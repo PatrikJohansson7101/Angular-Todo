@@ -1,0 +1,8 @@
+<div class="header">
+  <input
+    #newItem
+    placeholder="Add todo.."
+    (keyup.enter)="addNewItem(newItem.value)"
+  />
+  <button type="button" (click)="addNewItem(newItem.value)">Add todo</button>
+</div>

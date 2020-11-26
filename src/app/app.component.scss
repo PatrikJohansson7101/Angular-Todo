@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.isSelected {
+  span {
+    text-decoration: line-through;
+  }
+}
+
+.oneTodo {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px solid gray;
+  padding: 5px 5px;
+}
+
+.entireApp {
+  width: 275px;
+}
+
+.inputContainer {
+  text-align: center;
+  border: black solid 1px;
+  border-bottom: none;
+  background-color: gray;
+  padding: 10px;
+}
+.outputContainer {
+  border: solid 1px black;
+}
+.close {
+  border: 0.5px solid red;
+}
+.material-icons {
+  font-size: 15px;
+}
+.close:hover {
+  background-color: rgba(128, 128, 128, 0.363);
+  cursor: pointer;
+}

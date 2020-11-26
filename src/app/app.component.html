@@ -1,0 +1,27 @@
+<body>
+  <h3>Todolist -</h3>
+
+  <div class="entireApp">
+    <div class="inputContainer">
+      <app-child (newItemEvent)="addItem($event)"></app-child>
+    </div>
+    <div class="outputContainer">
+      <div
+        class="oneTodo"
+        [class.isSelected]="todo.completed"
+        *ngFor="let todo of todoList; let index = index"
+      >
+        <input
+          type="checkbox"
+          (click)="selectTodo(todo)"
+          [checked]="todo.completed"
+        />
+        <span>{{ todo.todoTitle }}</span>
+
+        <button class="close" (click)="deleteItem(index)">
+          <i class="material-icons">delete</i>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
