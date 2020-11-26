@@ -10,8 +10,9 @@ export class ChildComponent implements OnInit {
 
   addNewItem(value: string) {
     if (value == '') {
-      alert('Add data to inputfield');
+      alert('Write something');
     } else this.newItemEvent.emit(value);
+
     console.log(
       'From ChildComponent! Outputted values:,',
       value,
